@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mskkingtake.Dao.DeptpartmentMapper">
+	<resultMap type="mskkingtake.bean.DeptpartmentAndEmp" id="deptpartmentAndEmp">
+		<id column="DEPT_ID" property="deptId"/>
+		<result column="DEPT_NAME" property="deptName"/>
+		
+		<collection property="empList" column="{ID=DEPT_ID}" select="mskkingtake.Dao.EmpDeptMapper.getEmpDeptByDept">
+			<id column="ID" property="id" />
+			<result column="NAME" property="name" />
+			<result column="SEX" property="sex" />
+			<result column="EMAIL" property="email" />
+			<result column="ADDR" property="addr" />
+		</collection>
+	</resultMap>
+	
+
+	<!-- 查询部门信息 -->
+	<select id="getDeptById" resultType="mskkingtake.bean.Deptpartment">
+		SELECT D.DEPT_ID
+  			 , D.DEPT_NAME
+  		  FROM TM_DEPARTMENT D
+		 WHERE D.DEPT_ID = #{ID}
+	</select>
+	
+	<!-- 查询部门信息 -->
+	<select id="getDeptAndEmpById" resultMap="deptpartmentAndEmp">
+		SELECT D.DEPT_ID
+  			 , D.DEPT_NAME
+  		  FROM TM_DEPARTMENT D
+		 WHERE D.DEPT_ID = #{ID}
+	</select>
+</mapper>

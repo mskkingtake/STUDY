@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="cat" class="designPatterns.factory.springFactorySimple.animal.Cat"> 
+    </bean>
+    
+    <bean id="dog" class="designPatterns.factory.springFactorySimple.animal.Dog"> 
+    </bean>
+</beans>

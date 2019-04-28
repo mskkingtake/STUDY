@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 引入properties配置文件 -->
+	<properties resource="myBatis/DBconfig.properties"></properties>
+	
+	<!-- myBatis设置 -->
+	<settings>
+		<!-- 驼峰标识自动识别 -->
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+		<!-- 数据为空的时候，变成null -->
+		<setting name="jdbcTypeForNull" value="NULL"/>
+		<!--开启延迟加载-->
+	    <setting name="lazyLoadingEnabled" value="true"/>
+	    <!--关闭积极加载-->
+	    <setting name="aggressiveLazyLoading" value="false"/>
+	    <!-- 开启二级缓存 -->
+	    <setting name="cacheEnabled" value="true"/>
+	</settings>
+
+	<!-- 别名处理器-->
+	<typeAliases>
+		<!-- 为某个java类型取别名，默认别名为类名 -->
+		<typeAlias type="mskkingtake.bean.MskTest" alias="mskTest111"/>
+		
+		<!-- 批量别名处理器-->
+		<!-- 可以使用@Alias注解为某个类起别名-->
+		<package name="mskkingtake.bean"/>
+	</typeAliases>
+	
+	<!-- 数据库配置-->
+	<environments default="development">
+		<environment id="mskkingtake">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<!-- 数据库驱动 -->
+				<property name="driver" value="${JDBC.DRIVER}" />
+				<!-- 数据库连接 -->
+				<property name="url" value="${JDBC.URL}" />
+				<!-- 数据库用户名 -->
+				<property name="username" value="${JDBC.USERNAME}" />
+				<!-- 数据库密码 -->
+				<property name="password" value="${JDBC.PASSWORD}" />
+			</dataSource>
+		</environment>
+		
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<!-- 数据库驱动 -->
+				<property name="driver" value="${JDBC.DRIVER}" />
+				<!-- 数据库连接 -->
+				<property name="url" value="${JDBC.URL}" />
+				<!-- 数据库用户名 -->
+				<property name="username" value="${JDBC.USERNAME}" />
+				<!-- 数据库密码 -->
+				<property name="password" value="${JDBC.PASSWORD}" />
+			</dataSource>
+		</environment>
+	</environments>
+	
+	<databaseIdProvider type="DB_VENDOR">
+		<property name="MySql" value="mysql"/>
+		<property name="Oracle" value="oracle"/>
+	</databaseIdProvider>
+	
+	<!-- 配置映射-->
+	<mappers>		
+		<package name="mskkingtake.Dao"/>		
+	</mappers>	
+</configuration>
