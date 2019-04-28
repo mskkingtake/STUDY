@@ -17,13 +17,13 @@ public class MyBatisConf {
 		try {
 			if(SQL_SESSION_FACTOR == null) {
 				// 使用配置文件
-				// String resource = "myBatis/myBatis-conf.xml";
+				// String resource = "conf/myBatis/myBatis-conf.xml";
 				
 				// 使用properties配置文件
-//				 String resource = "myBatis/myBatis-properties-conf.xml";
+//				 String resource = "conf/myBatis/myBatis-properties-conf.xml";
 				
 				// 使用properties配置文件
-				String resource = "myBatis/myBatis-env-conf.xml";
+				String resource = "conf/myBatis/myBatis-env-conf.xml";
 				
 				InputStream inputStream = Resources.getResourceAsStream(resource);
 				SQL_SESSION_FACTOR = new SqlSessionFactoryBuilder().build(inputStream, "mskkingtake");

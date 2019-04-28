@@ -2,7 +2,7 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 	<!-- 引入properties配置文件 -->
-	<properties resource="myBatis/DBconfig.properties"></properties>
+	<properties resource="conf/myBatis/DBconfig.properties"></properties>
 	
 	<!-- myBatis设置 -->
 	<settings>
