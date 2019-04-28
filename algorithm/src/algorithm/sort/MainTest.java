@@ -6,16 +6,16 @@ public class MainTest {
 		int[] sortArr = {1,55,2,-4,78,-435,3,88,3,5,7,-23,-2,0,-1,1,1024};
 		Sort sort = null;
 		
-		System.out.println("=========Ã°ÅİÅÅĞò=========");
-		sort = SortFactory.createSort("Ã°Åİ");
+		System.out.println("=========å†’æ³¡æ’åº=========");
+		sort = SortFactory.createSort("å†’æ³¡");
 		sort.sort(sortArr);
 		
-		System.out.println("=========¿ìËÙÅÅĞò=========");
-		sort = SortFactory.createSort("¿ìËÙ");
+		System.out.println("=========å¿«é€Ÿæ’åº=========");
+		sort = SortFactory.createSort("å¿«é€Ÿ");
 		sort.sort(sortArr);
 		
-		System.out.println("=========Ñ¡ÔñÅÅĞò=========");
-		sort = SortFactory.createSort("Ñ¡Ôñ");
+		System.out.println("=========é€‰æ‹©æ’åº=========");
+		sort = SortFactory.createSort("é€‰æ‹©");
 		sort.sort(sortArr);
 	}
 }

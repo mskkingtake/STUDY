@@ -1,17 +1,17 @@
 package algorithm.sort;
 
-import algorithm.sort.bean.SORT_Ã°ÅİÅÅĞò;
-import algorithm.sort.bean.SORT_¿ìËÙÅÅĞò;
-import algorithm.sort.bean.SORT_Ñ¡ÔñÅÅĞò;
+import algorithm.sort.bean.SORT_å†’æ³¡æ’åº;
+import algorithm.sort.bean.SORT_å¿«é€Ÿæ’åº;
+import algorithm.sort.bean.SORT_é€‰æ‹©æ’åº;
 
 public class SortFactory {
 	public static Sort createSort(String type) {
-		if("Ã°Åİ".equals(type)) {
-			return new SORT_Ã°ÅİÅÅĞò();
-		} if("¿ìËÙ".equals(type)) {
-			return new SORT_¿ìËÙÅÅĞò();
-		} if("Ñ¡Ôñ".equals(type)) {
-			return new SORT_Ñ¡ÔñÅÅĞò();
+		if("å†’æ³¡".equals(type)) {
+			return new SORT_å†’æ³¡æ’åº();
+		} if("å¿«é€Ÿ".equals(type)) {
+			return new SORT_å¿«é€Ÿæ’åº();
+		} if("é€‰æ‹©".equals(type)) {
+			return new SORT_é€‰æ‹©æ’åº();
 		} else {
 			return null;
 		}

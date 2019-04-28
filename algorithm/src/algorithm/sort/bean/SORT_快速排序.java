@@ -3,10 +3,10 @@ package algorithm.sort.bean;
 import algorithm.sort.Sort;
 import algorithm.util.Util;
 
-public class SORT_¿ìËÙÅÅĞò implements Sort {
+public class SORT_å¿«é€Ÿæ’åº implements Sort {
 	
 	/**
-	 * ¿ìËÙÅÅĞò
+	 * å¿«é€Ÿæ’åº
 	 * @param sortArr
 	 */
 	public void sort(int[] sortArr) {
@@ -16,17 +16,17 @@ public class SORT_¿ìËÙÅÅĞò implements Sort {
 			return;
 		}
 		
-		System.out.println("ÉıĞòÅÅĞò");
+		System.out.println("å‡åºæ’åº");
 		sortAsc(sortArr, 0, sortArr.length - 1);
 		Util.showArr(sortArr);
 
-		System.out.println("½µĞòÅÅĞò");
+		System.out.println("é™åºæ’åº");
 		sortDesc(sortArr, 0, sortArr.length - 1);
 		Util.showArr(sortArr);
 	}
 	
 	/**
-	 * ¿ìËÙÅÅĞò-ÉıĞòÅÅĞò
+	 * å¿«é€Ÿæ’åº-å‡åºæ’åº
 	 * @param sortArr
 	 */
 	private void sortAsc(int[] sortArr, int lowPoint, int highPoint) {
@@ -44,7 +44,7 @@ public class SORT_¿ìËÙÅÅĞò implements Sort {
 	}
 	
 	/**
-	 * ¿ìËÙÅÅĞò-ÉıĞòÅÅĞò
+	 * å¿«é€Ÿæ’åº-å‡åºæ’åº
 	 * @param sortArr
 	 */
 	private int setPointAsc(int[] sortArr, int lowPoint, int highPoint) {
@@ -66,7 +66,7 @@ public class SORT_¿ìËÙÅÅĞò implements Sort {
 	}
 	
 	/**
-	 *¿ìËÙÅÅĞò- ½µĞòÅÅĞò
+	 *å¿«é€Ÿæ’åº- é™åºæ’åº
 	 * @param sortArr
 	 */
 	private void sortDesc(int[] sortArr, int lowPoint, int highPoint) {
@@ -84,7 +84,7 @@ public class SORT_¿ìËÙÅÅĞò implements Sort {
 	}
 	
 	/**
-	 * ¿ìËÙÅÅĞò-½µĞòÅÅĞò
+	 * å¿«é€Ÿæ’åº-é™åºæ’åº
 	 * @param sortArr
 	 */
 	private int setPointDesc(int[] sortArr, int lowPoint, int highPoint) {

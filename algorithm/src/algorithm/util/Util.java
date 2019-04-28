@@ -3,24 +3,24 @@ package algorithm.util;
 public class Util {
 	
 	/**
-	 * ¼ì²éÊı×é×´Ì¬
+	 * æ£€æŸ¥æ•°ç»„çŠ¶æ€
 	 * @param sortArr
 	 * @return
 	 */
 	public static String checkArr(int[] sortArr) {
 		if(sortArr == null) {
-			return "´«ÈëÊı×éÎª¿Õ";
+			return "ä¼ å…¥æ•°ç»„ä¸ºç©º";
 		}
 		
 		if(sortArr.length <= 0) {
-			return "´«ÈëÊı×éÎŞÊı¾İ";
+			return "ä¼ å…¥æ•°ç»„æ— æ•°æ®";
 		}
 		
 		return null;
 	}
 	
 	/**
-	 * ÏÔÊ¾Êı×é
+	 * æ˜¾ç¤ºæ•°ç»„
 	 * @param sortArr
 	 */
 	public static void showArr(int[] sortArr) {
@@ -32,7 +32,7 @@ public class Util {
 	}
 	
 	/**
-	 * ½»»»Êı¾İ
+	 * äº¤æ¢æ•°æ®
 	 * @param sortArr
 	 * @param i
 	 * @param j

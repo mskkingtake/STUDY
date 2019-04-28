@@ -3,10 +3,10 @@ package algorithm.sort.bean;
 import algorithm.sort.Sort;
 import algorithm.util.Util;
 
-public class SORT_Ã°ÅİÅÅĞò implements Sort {
+public class SORT_å†’æ³¡æ’åº implements Sort {
 	
 	/**
-	 * Ã°ÅİÅÅĞò
+	 * å†’æ³¡æ’åº
 	 * @param sortArr
 	 */
 	public void sort(int[] sortArr) {
@@ -16,17 +16,17 @@ public class SORT_Ã°ÅİÅÅĞò implements Sort {
 			return;
 		}
 		
-		System.out.println("ÉıĞòÅÅĞò");
+		System.out.println("å‡åºæ’åº");
 		sortAsc(sortArr);
 		Util.showArr(sortArr);
 		
-		System.out.println("½µĞòÅÅĞò");
+		System.out.println("é™åºæ’åº");
 		sortDesc(sortArr);
 		Util.showArr(sortArr);
 	}
 	
 	/**
-	 * Ã°ÅİÅÅĞò-ÉıĞòÅÅĞò
+	 * å†’æ³¡æ’åº-å‡åºæ’åº
 	 * @param sortArr
 	 */
 	private void sortAsc(int[] sortArr) {
@@ -40,7 +40,7 @@ public class SORT_Ã°ÅİÅÅĞò implements Sort {
 	}
 	
 	/**
-	 * Ã°ÅİÅÅĞò-½µĞòÅÅĞò
+	 * å†’æ³¡æ’åº-é™åºæ’åº
 	 * @param sortArr
 	 */
 	private void sortDesc(int[] sortArr) {
