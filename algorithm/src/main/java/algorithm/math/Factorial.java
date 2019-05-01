@@ -10,14 +10,14 @@ public class Factorial {
 		long result2 = getFactorialByrecursion(factorialNum);
 		
 		System.out.println(new Date().getTime());
-		System.out.println(factorialNum + "�Ľ׳�Ϊ:" + result1);
+		System.out.println(factorialNum + "的阶乘为:" + result1);
 		System.out.println(new Date().getTime());
-		System.out.println(factorialNum + "�Ľ׳�Ϊ:" + result2);
+		System.out.println(factorialNum + "的阶乘为:" + result2);
 		System.out.println(new Date().getTime());
 	}
 	
 	/**
-	 * ��һ�����Ľ׳�-ѭ��
+	 * 计算阶乘-循环方式
 	 * 
 	 * @param input
 	 * @return
@@ -34,7 +34,7 @@ public class Factorial {
 	}
 	
 	/**
-	 * ��һ�����Ľ׳�-�ݹ�
+	 * 计算阶乘-递归方式
 	 * 
 	 * @param input
 	 * @return

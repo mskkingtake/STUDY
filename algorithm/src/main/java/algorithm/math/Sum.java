@@ -7,11 +7,11 @@ public class Sum {
 		long result = 0;
 		result = getSum(sum);
 		
-		System.out.println("���1��" + sum + "�Ľ׺�:" + result);
+		System.out.println("从0到" + sum + "求和结果为:" + result);
 	}
 	
 	/**
-	 * ���1��ĳ�����ĺ�
+	 * 计算求和
 	 * 
 	 * @param input
 	 * @return
