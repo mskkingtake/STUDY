@@ -8,5 +8,4 @@ public class CheckInState implements State {
 	public void handle() {
 		System.out.println("房间入住");
 	}
-
 }
